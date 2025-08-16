@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AutoCare Hub - Your Trusted Partner for Automotive Excellence</title>
+    <meta name="description" content="Professional car workshop services including routine maintenance, engine diagnostics, brake repair, and bodywork. Expert technicians, quality service, and customer satisfaction guaranteed.">
+    <meta name="keywords" content="car workshop, auto repair, car maintenance, engine diagnostics, brake repair, automotive services, vehicle maintenance">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="AutoCare Hub - Your Trusted Partner for Automotive Excellence">
+    <meta property="og:description" content="Professional car workshop services with expert technicians and quality guaranteed.">
+    
+    <!-- Twitter -->
+    <meta name="twitter:title" content="AutoCare Hub - Your Trusted Partner for Automotive Excellence">
+    <meta name="twitter:description" content="Professional car workshop services with expert technicians and quality guaranteed.">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #1e40af;
+            --secondary-color: #f8fafc;
+            --accent-color: #dc2626;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --border-color: #e5e7eb;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-primary);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.2;
+        }
+        
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply bg-[var(--primary-color)] text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200;
+        }
+        
+        .btn-secondary {
+            @apply bg-white text-[var(--primary-color)] border-2 border-[var(--primary-color)] px-6 py-3 rounded-lg font-semibold hover:bg-[var(--primary-color)] hover:text-white transition-colors duration-200;
+        }
+        
+        .section-padding {
+            @apply py-16 px-4 sm:px-6 lg:px-8;
+        }
+        
+        .container-max {
+            @apply max-w-7xl mx-auto;
+        }
+        
+        .card {
+            @apply bg-white rounded-lg shadow-md p-6 border border-[var(--border-color)];
+        }
+        
+        .service-card {
+            @apply card hover:shadow-lg transition-shadow duration-200;
+        }
+    }
+
+    @layer utilities {
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .gradient-overlay {
+            background: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(30, 64, 175, 0.7));
+        }
+    }
+    </style>
+
+</head>
+<body class="smooth-scroll">
+    <div id="root"></div>
+    
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/Services.js"></script>
+    <script type="text/babel" src="components/About.js"></script>
+    <script type="text/babel" src="components/Testimonials.js"></script>
+    <script type="text/babel" src="components/Gallery.js"></script>
+    <script type="text/babel" src="components/Contact.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
